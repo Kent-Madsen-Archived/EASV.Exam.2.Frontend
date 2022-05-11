@@ -1,4 +1,5 @@
 <script>
+  import axios from 'axios';
 
   export default 
   {
@@ -6,12 +7,14 @@
     components: 
     {
       
+    },
+  
+    created() 
+    {
+      console.log("created");
     }
   }
 </script>
-<style scoped>
-  @import "./assets/css/application.css";
-</style>
 <template>
 
   <main>
@@ -19,3 +22,6 @@
   </main>
   
 </template>
+<style scoped>
+  @import "./assets/css/application.css";
+</style>
