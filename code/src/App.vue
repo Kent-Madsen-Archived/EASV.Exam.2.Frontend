@@ -4,14 +4,18 @@
 
   import PageLogoComponent 
     from "./components/PageLogoComponent.vue";
-  
+
+  import FooterAreaComponent 
+    from "./components/Areas/FooterAreaComponent.vue";
+
   export default 
   {
     name: "Application",
     components: 
     {
       NavigationComponent,
-      PageLogoComponent
+      PageLogoComponent,
+      FooterAreaComponent
     }
   }
 </script>
@@ -32,8 +36,5 @@
   <main>
     <router-view/>
   </main>
-  <footer>
-
-  </footer>
-
+  <FooterAreaComponent/>
 </template>
