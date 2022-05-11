@@ -1,9 +1,8 @@
 <script>
     import ButtonComponent from "../ButtonComponent.vue";
-    import PageLogoComponent from "../PageLogoComponent.vue";
-
     import MainHeader from "@/components/MainHeader.vue";
-    import axios from 'axios';
+    import PageLogoComponent from "../Areas/PageLogoComponent.vue";
+    import axios from 'axios';    
 
     export default 
     {
@@ -15,11 +14,11 @@
             password: String
         },
         components: 
-        { 
-            ButtonComponent, 
-            PageLogoComponent, 
-            MainHeader 
-        },
+        {
+    ButtonComponent,
+    PageLogoComponent,
+    MainHeader
+},
         methods:
         {
             Send()

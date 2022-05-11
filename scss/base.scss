@@ -60,12 +60,23 @@ header
 footer 
 {
     width: 100%;
-    min-height: 300px;
     background-color: #192a56;
     color: white;
 
 }
 
+footer .boundary 
+{
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 32px;
+    padding-top: 2pc;
+    padding-bottom: 2pc;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 //
 a 

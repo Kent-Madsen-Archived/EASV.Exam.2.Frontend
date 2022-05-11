@@ -1,6 +1,6 @@
 <script>
     import ButtonComponent from "../ButtonComponent.vue";
-    import PageLogoComponent from "../PageLogoComponent.vue";
+    import PageLogoComponent from "../Areas/PageLogoComponent.vue";
 
     import MainHeader from "@/components/MainHeader.vue";
     import axios from 'axios';

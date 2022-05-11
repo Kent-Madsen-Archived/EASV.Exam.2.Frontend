@@ -4,8 +4,6 @@
   </div>
 </template>
 <script>
-  import PageLogoComponent 
-    from "@/components/PageLogoComponent.vue";
     
   import MainHeader 
     from "@/components/MainHeader.vue";
@@ -18,7 +16,6 @@
     name: 'RegisterView',
     components: 
     {
-      PageLogoComponent,
       MainHeader,
       RegisterComponent
     }
