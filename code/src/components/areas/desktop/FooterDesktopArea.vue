@@ -9,7 +9,7 @@
   }
 </script>
 <template>
-    <footer>
+    <footer class="desktop">
         
     </footer>
 </template>

@@ -9,7 +9,7 @@
   }
 </script>
 <template>
-  <header>
+  <header class="mobile">
     
   </header>
 </template>

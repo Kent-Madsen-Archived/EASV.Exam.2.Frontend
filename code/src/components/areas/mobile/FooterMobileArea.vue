@@ -9,7 +9,7 @@
   }
 </script>
 <template>
-    <footer>
+  <footer class="mobile">
         
-    </footer>
+  </footer>
 </template>

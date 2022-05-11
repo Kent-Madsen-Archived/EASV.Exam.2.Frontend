@@ -1,6 +1,6 @@
 <script>
   import FooterMobileArea 
-    from './desktop/FooterMobileArea.vue';
+    from './mobile/FooterMobileArea.vue';
 
   import FooterDesktopArea 
     from './desktop/FooterDesktopArea.vue';
@@ -17,6 +17,6 @@
   }
 </script>
 <template>
-  <FooterDesktopArea/>
-  <FooterMobileArea/>
+  <FooterDesktopArea />
+  <FooterMobileArea />
 </template>
