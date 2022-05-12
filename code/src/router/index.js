@@ -55,31 +55,31 @@ const routes =
   {
     path: '/dashboard',
     name: 'Dashboard',
-    component: () => import( /* */ '../views/DashboardView.vue' )
+    component: () => import( /* */ '../views/login/DashboardView.vue' )
   },
   
   {
     path: '/profile',
     name: 'Profile',
-    component: () => import( /* */ '../views/ProfileView.vue' )
+    component: () => import( /* */ '../views/login/ProfileView.vue' )
   },
   
   {
     path: '/kanbans',
-    name: 'Kanban',
-    component: () => import( /* */ '../views/KanbanView.vue' )
+    name: 'Kanbans',
+    component: () => import( /* */ '../views/login/KanbanView.vue' )
   },
   
   {
     path: '/projects',
-    name: 'Project',
-    component: () => import( /* */ '../views/ProjectView.vue' )
+    name: 'Projects',
+    component: () => import( /* */ '../views/login/ProjectView.vue' )
   },
   
   {
     path: '/settings',
     name: 'Settings',
-    component: () => import( /* */ '../views/SettingsView.vue' )
+    component: () => import( /* */ '../views/login/SettingsView.vue' )
   }
 ]
 
