@@ -5,6 +5,7 @@
   import HeaderSearch 
     from '../elements/HeaderSearch.vue';
 
+
   export default 
   {
     name: 'HeaderDesktopArea',
