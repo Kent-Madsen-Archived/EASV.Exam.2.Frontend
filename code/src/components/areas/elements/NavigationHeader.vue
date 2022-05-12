@@ -5,6 +5,9 @@
   import LoginNavigation 
     from './LoginNavigation.vue';
 
+  import store 
+    from '@/store';
+
 
   export default 
   {
@@ -13,10 +16,21 @@
     {
       PublicNavigation,
       LoginNavigation
+    },
+    methods:
+    {
+      isUserLoggedIn: function()
+      {
+        return store.getters.retrieveUserState;
+      } 
     }
   }
 </script>
 <template>
-  <PublicNavigation />
-  <LoginNavigation />
+  <div v-if="isUserLoggedIn()">
+    <LoginNavigation />
+  </div>
+  <div v-else>
+    <PublicNavigation />
+  </div>
 </template>

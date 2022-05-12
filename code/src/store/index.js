@@ -7,7 +7,8 @@ export default createStore(
     
     state: 
     {
-      configurationServerUrl: String()
+      configurationServerUrl: String(),
+      loggedInAsUser: false,
     },
 
     getters: 
@@ -15,6 +16,11 @@ export default createStore(
       retrieveConfigurationUrl: function( state )
       {
         return state.configurationServerUrl;
+      },
+
+      retrieveUserState: function( state )
+      {
+        return state.loggedInAsUser;
       }
     },
 
@@ -25,6 +31,18 @@ export default createStore(
         if( typeof payload == 'string' )
         {
           state.configurationServerUrl = payload;
+        }
+        else 
+        {
+          throw console.error( 'Wrong data format' );
+        }
+      },
+
+      UPDATE_USER_STATE( state, payload )
+      {
+        if( typeof payload == 'bool' )
+        {
+          state.loggedInAsUser = payload;
         }
         else 
         {
@@ -45,6 +63,11 @@ export default createStore(
       {
 
         context.commit( 'UPDATE_CONFIGURATION_SERVER', payload );
+      },
+      
+      setUserState( context, payload )
+      {
+        context.commit( 'UPDATE_USER_STATE', payload );
       }
 
     },
