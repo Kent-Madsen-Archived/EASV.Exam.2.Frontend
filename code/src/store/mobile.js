@@ -20,19 +20,19 @@ const MobileStore =
     },
     actions: 
     {
-        ShowMobileMenu({state, commit, rootState})
+        ShowMobileMenu( { state, commit, rootState } )
         {
-            commit('setMenuStateShow');
+            commit( 'setMenuStateShow', null );
         },
 
-        HideMobileMenu({state, commit, rootState})
+        HideMobileMenu( { state, commit, rootState } )
         {
-            commit('setMenuStateHide');
+            commit( 'setMenuStateHide', null );
         }
     },
     getters: 
     {
-        ShowMobileMenu( state )
+        RetrieveShowMobileMenu( state )
         {
             return state.showMenu;
         }

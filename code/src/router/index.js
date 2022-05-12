@@ -17,12 +17,6 @@ const routes =
   },
 
   {
-    path: '/redirect',
-    name: 'Redirect',
-    component: RedirectView
-  },
-
-  {
     path: '/about',
     name: 'About',
     component: () => import( /* */ '../views/public/AboutView.vue' )
