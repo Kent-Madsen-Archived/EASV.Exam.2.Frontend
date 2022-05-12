@@ -8,6 +8,8 @@
   import Configuration
     from './components/Configuration.vue';
 
+  import './registerServiceWorker';
+
 
   export default 
   {
