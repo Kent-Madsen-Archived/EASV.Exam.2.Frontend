@@ -14,8 +14,8 @@
 </script>
 <template>
   <main>
-    <div class="">
-      <MainHeader TextArea="Dashboard" />
+    <div class="view-settings">
+      <MainHeader TextArea="Settings" />
     </div>
   </main>
 </template>

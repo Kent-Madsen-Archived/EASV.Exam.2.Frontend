@@ -5,7 +5,7 @@
 
   export default 
   {
-    name: 'AboutView',
+    name: 'PricesView',
     components: 
     {
       MainHeader
@@ -14,8 +14,8 @@
 </script>
 <template>
   <main>
-    <div class="view-about">
-      <MainHeader TextArea="About us" />
+    <div class="view-prices">
+      <MainHeader TextArea="Prices" />
     </div>
   </main>
 </template>

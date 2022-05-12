@@ -14,8 +14,8 @@
 </script>
 <template>
   <main>
-    <div class="">
-      <MainHeader TextArea="Kanban" />
+    <div class="view-project">
+      <MainHeader TextArea="Project" />
     </div>
   </main>
 </template>

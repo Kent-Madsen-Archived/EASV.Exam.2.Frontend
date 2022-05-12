@@ -2,9 +2,10 @@
   import MainHeader 
     from '@/components/headers/MainHeader.vue';
 
+
   export default 
   {
-    name: 'HomeView',
+    name: 'RegistrationView',
     components: 
     {
       MainHeader
@@ -13,8 +14,8 @@
 </script>
 <template>
   <main>
-    <div class="view-home">
-      <MainHeader TextArea="Home" />
+    <div class="view-registration">
+      <MainHeader TextArea="Registration" />
     </div>
   </main>
 </template>
