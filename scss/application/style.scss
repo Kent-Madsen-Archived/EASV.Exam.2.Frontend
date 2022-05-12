@@ -1,4 +1,14 @@
+// External imports
+@import url( 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap' );
+
+
+// Beginning of the 
 @import 'variables.scss';
+
+@import 'headers.scss';
+@import 'body.scss';
+@import 'menu.scss';
+
 
 // Mobile responsiveness
 @import 'responsiveness.scss';
