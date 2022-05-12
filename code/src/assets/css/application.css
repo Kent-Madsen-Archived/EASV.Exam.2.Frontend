@@ -1,3 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap");
+h1 {
+  font-family: "open sans";
+  text-align: center;
+}
+
+h2 {
+  font-family: "open sans";
+}
+
+h3 {
+  font-family: "open sans";
+}
+
+h4 {
+  font-family: "open sans";
+}
+
+p {
+  font-family: "roboto";
+}
+
 @media only screen and (min-width: 769px) {
   .mobile {
     display: none;
