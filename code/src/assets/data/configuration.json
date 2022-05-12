@@ -1,0 +1,11 @@
+{
+    "development":
+    {
+        "configuration_url":"http://localhost:8080/"
+    },
+    
+    "production":
+    {
+        "configuration_url":"https://kanban-project-backend-xvkk6.ondigitalocean.app/"
+    }
+}
