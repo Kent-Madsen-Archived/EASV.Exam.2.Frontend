@@ -4,9 +4,14 @@ import
     createWebHistory 
 } from 'vue-router';
 
+<<<<<<< HEAD
 import RedirectView 
   from '../views/RedirectView.vue';
 
+=======
+import HomeView 
+  from '../views/HomeView.vue';
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
 
 const routes = 
 [
@@ -24,6 +29,7 @@ const routes =
 
   {
     path: '/about',
+<<<<<<< HEAD
     name: 'About',
     component: () => import( /* */ '../views/AboutView.vue' )
   },
@@ -81,6 +87,11 @@ const routes =
     name: 'Settings',
     component: () => import( /* */ '../views/SettingsView.vue' )
   }
+=======
+    name: 'about',
+    component: () => import('../views/AboutView.vue')
+  },
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
 ]
 
 const router = createRouter(

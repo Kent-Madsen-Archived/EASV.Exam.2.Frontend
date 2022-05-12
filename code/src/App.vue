@@ -1,4 +1,5 @@
 <script>
+<<<<<<< HEAD
   import HeaderArea 
     from './components/areas/HeaderArea.vue';
 
@@ -10,6 +11,8 @@
 
   import './registerServiceWorker';
 
+=======
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
 
   export default 
   {
@@ -17,6 +20,7 @@
 
     components: 
     {
+<<<<<<< HEAD
       HeaderArea,
       FooterArea,
       Configuration
@@ -24,10 +28,13 @@
   
     created() 
     {
+=======
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
       
     }
   }
 </script>
+<<<<<<< HEAD
 <template>
   <HeaderArea/>
   <router-view/>
@@ -37,3 +44,15 @@
 <style scoped>
   @import "./assets/css/application.css";
 </style>
+=======
+<style scoped>
+  @import "./assets/css/application.css";
+</style>
+<template>
+
+  <main>
+    <router-view/>
+  </main>
+  
+</template>
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30

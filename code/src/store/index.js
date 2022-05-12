@@ -9,12 +9,17 @@ export default createStore
     
     state: 
     {
+<<<<<<< HEAD
       configurationServerUrl: String(),
       loggedInAsUser: false,
+=======
+
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
     },
 
     getters: 
     {
+<<<<<<< HEAD
       retrieveConfigurationUrl: function( state )
       {
         return state.configurationServerUrl;
@@ -54,6 +59,14 @@ export default createStore
       
     },
 
+=======
+
+    },
+    mutations: 
+    {
+      
+    },
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
     methods:
     {
       
@@ -61,6 +74,7 @@ export default createStore
 
     actions:
     {
+<<<<<<< HEAD
       setConfigurationUrl( context, payload )
       {
 
@@ -71,6 +85,8 @@ export default createStore
       {
         context.commit( 'UPDATE_USER_STATE', payload );
       }
+=======
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
 
     },
 
