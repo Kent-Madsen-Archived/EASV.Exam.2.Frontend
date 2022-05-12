@@ -1,25 +1,23 @@
 <script>
+  import NavigationHeader 
+    from '../elements/NavigationHeader.vue';
+
+  import HeaderSearch 
+    from '../elements/HeaderSearch.vue';
+
   export default 
   {
     name: 'HeaderDesktopArea',
     components: 
     {
-      
+      NavigationHeader,
+      HeaderSearch
     }
   }
 </script>
 <template>
     <header class="desktop">
-        <ul>
-          <li>
-            <router-link to="/about"> About </router-link>
-          </li>
-          <li>
-            <router-link to="/redirect"> Redirect </router-link>
-          </li>
-          <li>
-            <router-link to="/about"> About </router-link>
-          </li>
-        </ul>
+      <NavigationHeader />
+      <HeaderSearch />
     </header>
 </template>
