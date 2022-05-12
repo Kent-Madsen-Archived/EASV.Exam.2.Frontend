@@ -65,13 +65,13 @@ const routes =
   },
   
   {
-    path: '/kanban',
+    path: '/kanbans',
     name: 'Kanban',
     component: () => import( /* */ '../views/KanbanView.vue' )
   },
   
   {
-    path: '/project',
+    path: '/projects',
     name: 'Project',
     component: () => import( /* */ '../views/ProjectView.vue' )
   },
@@ -90,4 +90,4 @@ const router = createRouter(
   }
 )
 
-export default router
+export default router;
