@@ -7,6 +7,10 @@ import
 import HomeView 
   from '../views/HomeView.vue';
 
+import RedirectView 
+  from '../views/RedirectView.vue';
+
+
 const routes = 
 [
   {
@@ -15,10 +19,15 @@ const routes =
     component: HomeView
   },
   {
+    path: '/redirect',
+    name: 'redirect',
+    component: RedirectView
+  },
+  {
     path: '/about',
     name: 'about',
-    component: () => import('../views/AboutView.vue')
-  },
+    component: () => import(/* */ '../views/AboutView.vue')
+  }
 ]
 
 const router = createRouter(

@@ -28,9 +28,7 @@
 </script>
 <template>
   <HeaderArea/>
-  <main>
-    <router-view/>
-  </main>
+  <router-view/>
   <FooterArea/>
   <Configuration />
 </template>

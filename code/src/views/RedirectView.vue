@@ -2,20 +2,19 @@
   import MainHeader 
     from '@/components/headers/MainHeader.vue';
 
-
   export default 
   {
-    name: 'AboutView',
+    name: 'RedirectView',
     components: 
     {
-      MainHeader
+      MainHeader 
     }
   }
 </script>
 <template>
   <main>
-    <div class="view-about">
-      <MainHeader TextArea="About us" />
+    <div class="view-redirect">
+      <MainHeader TextArea="Redirect" />
     </div>
   </main>
 </template>
