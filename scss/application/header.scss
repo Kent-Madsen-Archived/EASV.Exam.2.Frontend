@@ -2,3 +2,70 @@ header
 {
 
 }
+
+
+header .public
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+header .public li
+{
+    margin-top: 0.8pc;
+    margin-bottom: 0.8pc;
+
+    margin-left: 1.2pc;
+    margin-right: 1.2pc;   
+}
+
+
+header .public li a
+{
+    font-family: $header-menu-font;
+    color: $header-menu-link;
+    transition: 0.250s ease;
+
+}
+
+
+header .public li a:hover 
+{
+    color: $header-menu-hover;
+
+}
+
+
+header .public li a:active 
+{
+    color: $header-menu-active;
+
+}
+
+@media only screen and ( max-width: 768px ) 
+{
+    .mobile
+    {
+        display: block;
+    }
+
+    .mobile ul 
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .mobile ul li 
+    {
+        text-align: center;
+        margin: 0px;
+        
+        margin-top: 0.4pc;
+        margin-bottom: 0.4pc;
+        
+    }
+
+}

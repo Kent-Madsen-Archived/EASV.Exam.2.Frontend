@@ -2,6 +2,7 @@
   import MainHeader 
     from '@/components/headers/MainHeader.vue';
 
+
   export default 
   {
     name: 'RedirectView',

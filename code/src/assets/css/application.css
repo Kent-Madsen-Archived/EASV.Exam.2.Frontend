@@ -16,10 +16,73 @@ h4 {
   font-family: "open sans";
 }
 
+html {
+  background-color: #f5f6fa;
+}
+
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
 p {
   font-family: "roboto";
 }
 
+header .public {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header .public li {
+  margin-top: 0.8pc;
+  margin-bottom: 0.8pc;
+  margin-left: 1.2pc;
+  margin-right: 1.2pc;
+}
+
+header .public li a {
+  font-family: "open sans";
+  color: #00a8ff;
+  transition: 0.25s ease;
+}
+
+header .public li a:hover {
+  color: #4cd137;
+}
+
+header .public li a:active {
+  color: #e84118;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+
+  .mobile ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile ul li {
+    text-align: center;
+    margin: 0px;
+    margin-top: 0.4pc;
+    margin-bottom: 0.4pc;
+  }
+}
 @media only screen and (min-width: 769px) {
   .mobile {
     display: none;
@@ -32,10 +95,6 @@ p {
 @media only screen and (max-width: 768px) {
   .desktop {
     display: none;
-  }
-
-  .mobile {
-    display: block;
   }
 }
 

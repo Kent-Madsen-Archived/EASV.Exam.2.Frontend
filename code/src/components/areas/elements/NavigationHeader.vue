@@ -27,10 +27,6 @@
   }
 </script>
 <template>
-  <div v-if="isUserLoggedIn()">
-    <LoginNavigation />
-  </div>
-  <div v-else>
-    <PublicNavigation />
-  </div>
+    <LoginNavigation v-if="isUserLoggedIn()" />
+    <PublicNavigation v-else />
 </template>
