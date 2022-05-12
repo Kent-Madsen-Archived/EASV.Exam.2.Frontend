@@ -13,7 +13,7 @@ const routes =
   {
     path: '/',
     name: 'Home',
-    component: () => import( '../views/HomeView.vue' )
+    component: () => import( '../views/public/HomeView.vue' )
   },
 
   {
@@ -25,31 +25,31 @@ const routes =
   {
     path: '/about',
     name: 'About',
-    component: () => import( /* */ '../views/AboutView.vue' )
+    component: () => import( /* */ '../views/public/AboutView.vue' )
   },
 
   {
     path: '/login',
     name: 'Login',
-    component: () => import( /* */ '../views/LoginView.vue' )
+    component: () => import( /* */ '../views/public/LoginView.vue' )
   },
 
   {
     path: '/registration',
     name: 'Registration',
-    component: () => import( /* */ '../views/RegistrationView.vue' )
+    component: () => import( /* */ '../views/public/RegistrationView.vue' )
   },
 
   {
     path: '/prices',
     name: 'Prices',
-    component: () => import( /* */ '../views/PricesView.vue' )
+    component: () => import( /* */ '../views/public/PricesView.vue' )
   },
   
   {
     path: '/features',
     name: 'Features',
-    component: () => import( /* */ '../views/FeaturesView.vue' )
+    component: () => import( /* */ '../views/public/FeaturesView.vue' )
   },
   
   {
