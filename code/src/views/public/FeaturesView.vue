@@ -14,8 +14,8 @@
 </script>
 <template>
   <main>
-    <div class="view-about">
-      <MainHeader TextArea="About us" />
+    <div class="view-features">
+      <MainHeader TextArea="Features" />
     </div>
   </main>
 </template>

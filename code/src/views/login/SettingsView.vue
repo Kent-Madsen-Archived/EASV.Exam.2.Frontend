@@ -5,7 +5,7 @@
 
   export default 
   {
-    name: 'ProjectView',
+    name: 'SettingsView',
     components: 
     {
       MainHeader
@@ -14,8 +14,8 @@
 </script>
 <template>
   <main>
-    <div class="">
-      <MainHeader TextArea="Kanban" />
+    <div class="view-settings">
+      <MainHeader TextArea="Settings" />
     </div>
   </main>
 </template>

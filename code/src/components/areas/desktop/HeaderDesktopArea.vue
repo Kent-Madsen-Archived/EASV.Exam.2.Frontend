@@ -6,7 +6,7 @@
     from '../elements/HeaderSearch.vue';
 
 
-  export default 
+  export default
   {
     name: 'HeaderDesktopArea',
     components: 
