@@ -5,7 +5,7 @@
 
   export default 
   {
-    name: 'SettingsView',
+    name: 'RegistrationView',
     components: 
     {
       MainHeader
@@ -14,8 +14,8 @@
 </script>
 <template>
   <main>
-    <div class="">
-      <MainHeader TextArea="Dashboard" />
+    <div class="view-registration">
+      <MainHeader TextArea="Registration" />
     </div>
   </main>
 </template>

@@ -1,3 +1,41 @@
+html 
+{
+    background-color: $background-color;
+}
+
+
+body 
+{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+
+#app 
+{
+    
+}
+
+
+ul
+{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li
+{
+
+}
+
+
+a 
+{
+    text-decoration: none;
+}
+
+
 p 
 {
     font-family: $body-font;
