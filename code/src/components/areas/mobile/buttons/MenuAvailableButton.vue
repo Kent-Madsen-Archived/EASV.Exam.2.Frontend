@@ -8,20 +8,24 @@
     name: 'MenuAvailableButton',
     methods:
     {
-      clicked()
+      onAction()
       {
         store.dispatch('InvertOfMenu');
+      },
+
+      isActive()
+      {
+        return false;
       }
     },
     computed:
     {
-
     }
   }
 </script>
 <template>
   <a class="menu-button-click">
-    <div class="menu-button ui-button-mobile" @click="clicked()">
+    <div class="menu-button ui-button-mobile" @click="onAction()">
       <img src="@/assets/svg/bars-solid.svg" alt="" :class="{ active:isActive }" />
     </div>
   </a>
