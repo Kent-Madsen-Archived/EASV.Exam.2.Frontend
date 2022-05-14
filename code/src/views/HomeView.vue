@@ -1,18 +1,33 @@
 <script>
+<<<<<<< HEAD
   import MainHeader 
-    from "@/components/MainHeader.vue";
-  
+    from '@/components/headers/MainHeader.vue';
+
+=======
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
   export default 
   {
     name: 'HomeView',
     components: 
     {
-        MainHeader
+<<<<<<< HEAD
+      MainHeader
+=======
+      
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
     }
   }
 </script>
 <template>
+<<<<<<< HEAD
+  <main>
+    <div class="view-home">
+      <MainHeader TextArea="Home" />
+    </div>
+  </main>
+=======
   <div class="view-home">
-    <MainHeader Message="Frontpage" />
+    
   </div>
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
 </template>

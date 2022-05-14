@@ -1,26 +1,21 @@
-<template>
-  <div class="view-forgot">
-    <router-link to="/">
-      <PageLogoComponent imageSrc="../assets/logo.png" />
-    </router-link>
-    
-    <MainHeader Message="Forgot account information" />
-    
-  </div>
-</template>
 <script>
-  import PageLogoComponent 
-    from "@/components/PageLogoComponent.vue";
   import MainHeader 
-    from "@/components/MainHeader.vue";
+    from '@/components/headers/MainHeader.vue';
+
 
   export default 
   {
-    name: 'ForgotView',
+    name: 'HomeView',
     components: 
     {
-      PageLogoComponent,
       MainHeader
     }
   }
 </script>
+<template>
+  <main>
+    <div class="view-home">
+      <MainHeader TextArea="Home" />
+    </div>
+  </main>
+</template>

@@ -1,11 +1,7 @@
-<template>
-  <div class="view-kanban">
-    <MainHeader Message="Kanban" />
-  </div>
-</template>
 <script>
   import MainHeader 
-    from "@/components/MainHeader.vue";
+    from '@/components/headers/MainHeader.vue';
+
 
   export default 
   {
@@ -16,3 +12,10 @@
     }
   }
 </script>
+<template>
+  <main>
+    <div class="">
+      <MainHeader TextArea="Kanban" />
+    </div>
+  </main>
+</template>

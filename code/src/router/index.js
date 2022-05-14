@@ -1,60 +1,104 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import 
+{ 
+    createRouter, 
+    createWebHistory 
+} from 'vue-router';
+
+<<<<<<< HEAD
+import RedirectView 
+  from '../views/RedirectView.vue';
+
+=======
+import HomeView 
+  from '../views/HomeView.vue';
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
 
 const routes = 
 [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'Home',
+    component: () => import( '../views/HomeView.vue' )
   },
+
+  {
+    path: '/redirect',
+    name: 'Redirect',
+    component: RedirectView
+  },
+
   {
     path: '/about',
-    name: 'about',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+<<<<<<< HEAD
+    name: 'About',
+    component: () => import( /* */ '../views/AboutView.vue' )
   },
+
   {
     path: '/login',
-    name: 'login',
-    component: () => import(/* webpackChunkName: "about" */ '../views/LoginView.vue')
+    name: 'Login',
+    component: () => import( /* */ '../views/LoginView.vue' )
   },
+
   {
-    path: '/register',
-    name: 'register profile',
-    component: () => import(/* webpackChunkName: "about" */ '../views/RegisterView.vue')
+    path: '/registration',
+    name: 'Registration',
+    component: () => import( /* */ '../views/RegistrationView.vue' )
   },
+
   {
-    path: '/registration_completed',
-    name: 'registration completed',
-    component: () => import(/* webpackChunkName: "about" */ '../views/RegisterCompletionView.vue')
+    path: '/prices',
+    name: 'Prices',
+    component: () => import( /* */ '../views/PricesView.vue' )
   },
+  
   {
-    path: '/kanban',
-    name: 'kanban',
-    component: () => import(/* webpackChunkName: "about" */ '../views/KanbanView.vue')
+    path: '/features',
+    name: 'Features',
+    component: () => import( /* */ '../views/FeaturesView.vue' )
   },
+  
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: () => import( /* */ '../views/DashboardView.vue' )
+  },
+  
   {
     path: '/profile',
-    name: 'profile',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ProfileView.vue')
+    name: 'Profile',
+    component: () => import( /* */ '../views/ProfileView.vue' )
   },
+  
   {
-    path: '/help',
-    name: 'help',
-    component: () => import(/* webpackChunkName: "about" */ '../views/HelpView.vue')
+    path: '/kanbans',
+    name: 'Kanban',
+    component: () => import( /* */ '../views/KanbanView.vue' )
   },
+  
   {
-    path: '/forgot',
-    name: 'forgot',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ForgotView.vue')
+    path: '/projects',
+    name: 'Project',
+    component: () => import( /* */ '../views/ProjectView.vue' )
+  },
+  
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: () => import( /* */ '../views/SettingsView.vue' )
   }
+=======
+    name: 'about',
+    component: () => import('../views/AboutView.vue')
+  },
+>>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
 ]
 
 const router = createRouter(
   {
-    history: createWebHistory(process.env.BASE_URL),
+    history: createWebHistory( process.env.BASE_URL ),
     routes
   }
 )
 
-export default router
+export default router;

@@ -1,6 +1,7 @@
 <script>
   import MainHeader 
-    from "@/components/MainHeader.vue";
+    from '@/components/headers/MainHeader.vue';
+
 
   export default 
   {
@@ -12,7 +13,9 @@
   }
 </script>
 <template>
-  <div class="view-profile">
-    <MainHeader Message="Profile"/>
-  </div>
+  <main>
+    <div class="">
+      <MainHeader TextArea="Profile" />
+    </div>
+  </main>
 </template>
