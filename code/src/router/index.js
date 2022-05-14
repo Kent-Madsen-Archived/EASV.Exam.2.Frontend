@@ -4,75 +4,32 @@ import
     createWebHistory 
 } from 'vue-router';
 
+import UserProfileRoutes from './UserProfile.js';
+import PublicRoutes from './PublicRoutes.js';
 
-const routes = 
-[
-  {
-    path: '/',
-    name: 'Home',
-    component: () => import( '../views/public/HomeView.vue' )
-  },
+var RouteArray = new Array();
 
-  {
-    path: '/about',
-    name: 'About',
-    component: () => import( /* */ '../views/public/AboutView.vue' )
-  },
+let idx = 0;
 
-  {
-    path: '/login',
-    name: 'Login',
-    component: () => import( /* */ '../views/public/LoginView.vue' )
-  },
+for( idx; idx < PublicRoutes.length; idx++ )
+{
+  RouteArray.push( PublicRoutes[ idx ] );
+}
 
-  {
-    path: '/registration',
-    name: 'Registration',
-    component: () => import( /* */ '../views/public/RegistrationView.vue' )
-  },
+idx = 0;
 
-  {
-    path: '/prices',
-    name: 'Prices',
-    component: () => import( /* */ '../views/public/PricesView.vue' )
-  },
-  
-  {
-    path: '/features',
-    name: 'Features',
-    component: () => import( /* */ '../views/public/FeaturesView.vue' )
-  },
-  
-  {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: () => import( /* */ '../views/login/DashboardView.vue' )
-  },
-  
-  {
-    path: '/profile',
-    name: 'Profile',
-    component: () => import( /* */ '../views/login/ProfileView.vue' )
-  },
-  
-  {
-    path: '/kanbans',
-    name: 'Kanbans',
-    component: () => import( /* */ '../views/login/KanbanView.vue' )
-  },
-  
-  {
-    path: '/projects',
-    name: 'Projects',
-    component: () => import( /* */ '../views/login/ProjectView.vue' )
-  },
-  
-  {
-    path: '/settings',
-    name: 'Settings',
-    component: () => import( /* */ '../views/login/SettingsView.vue' )
-  }
-]
+for( idx; idx < UserProfileRoutes.length; idx++ )
+{
+  RouteArray.push( UserProfileRoutes[ idx ] );
+}
+
+RouteArray.sort((a, b) => {
+  return a.path > b.path;
+});
+
+console.log(RouteArray);
+
+const routes = RouteArray;
 
 const router = createRouter(
   {
