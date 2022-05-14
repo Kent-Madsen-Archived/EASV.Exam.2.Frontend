@@ -17,6 +17,11 @@ const MobileStore =
         {
             state.showMenu = true;
         },
+
+        invertMenuState( state )
+        {
+            state.showMenu = !state.showMenu;
+        }
     },
     actions: 
     {
@@ -28,6 +33,11 @@ const MobileStore =
         HideMobileMenu( { state, commit, rootState } )
         {
             commit( 'setMenuStateHide', null );
+        },
+
+        InvertOfMenu( { state, commit, rootState } )
+        {
+            commit( 'invertMenuState', null );
         }
     },
     getters: 
