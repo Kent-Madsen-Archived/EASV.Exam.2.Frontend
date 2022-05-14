@@ -1,7 +1,8 @@
 import { createStore } 
   from 'vuex'
 
-import mobileStore from './mobile';
+import mobileStore 
+  from './mobile';
 
 export default createStore
 (

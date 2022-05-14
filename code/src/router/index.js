@@ -4,9 +4,6 @@ import
     createWebHistory 
 } from 'vue-router';
 
-import RedirectView 
-  from '../views/RedirectView.vue';
-
 
 const routes = 
 [

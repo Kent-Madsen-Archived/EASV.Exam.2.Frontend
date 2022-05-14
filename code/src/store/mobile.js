@@ -40,4 +40,5 @@ const MobileStore =
 
 }
 
-module.exports = MobileStore
+
+module.exports = MobileStore;
