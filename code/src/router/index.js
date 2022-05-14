@@ -4,34 +4,41 @@ import
     createWebHistory 
 } from 'vue-router';
 
-import UserProfileRoutes from './UserProfile.js';
-import PublicRoutes from './PublicRoutes.js';
+import UserProfileRoutes 
+  from './UserProfile.js';
+  
+import PublicRoutes 
+  from './PublicRoutes.js';
+
 
 var RouteArray = new Array();
 
-let idx = 0;
-
-for( idx; idx < PublicRoutes.length; idx++ )
+function Append( Array )
 {
-  RouteArray.push( PublicRoutes[ idx ] );
+  let idx = 0;
+
+  for( idx; idx < Array.length; idx++ )
+  {
+    RouteArray.push( Array[ idx ] );
+  }
 }
 
-idx = 0;
+Append( PublicRoutes );
+Append( UserProfileRoutes );
 
-for( idx; idx < UserProfileRoutes.length; idx++ )
-{
-  RouteArray.push( UserProfileRoutes[ idx ] );
-}
+RouteArray.sort( 
+  (a, b) => 
+  {
+    return a.path > b.path;
+  }
+);
 
-RouteArray.sort((a, b) => {
-  return a.path > b.path;
-});
 
-console.log(RouteArray);
-
+// Base requirements
 const routes = RouteArray;
 
-const router = createRouter(
+const router = createRouter
+(
   {
     history: createWebHistory( process.env.BASE_URL ),
     routes
