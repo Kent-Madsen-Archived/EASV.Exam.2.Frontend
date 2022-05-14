@@ -20,23 +20,6 @@ p {
   font-family: "roboto";
 }
 
-@media only screen and (min-width: 769px) {
-  .mobile {
-    display: none;
-  }
-
-  .desktop {
-    display: block;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-=======
 @media only screen and (max-width: 1248px) {
   footer .boundary {
     grid-template-rows: 1fr 1fr;
@@ -47,7 +30,6 @@ p {
   footer .boundary {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
->>>>>>> 9c987f1a29d3e73d43d0a3dd98b88e94e6583a30
   }
 }
 
