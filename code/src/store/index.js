@@ -1,8 +1,12 @@
+/** 
+* Authors: Kent vejrup Madsen
+*/
 import { createStore } 
   from 'vuex'
 
 import mobileStore 
   from './mobile';
+
 
 export default createStore
 (

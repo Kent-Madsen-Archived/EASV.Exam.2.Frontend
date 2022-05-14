@@ -1,5 +1,8 @@
 <script>
- export default 
+  /** 
+   * Authors: Kent vejrup Madsen
+   */
+  export default 
   {
     name: 'MainHeader',
     props: 

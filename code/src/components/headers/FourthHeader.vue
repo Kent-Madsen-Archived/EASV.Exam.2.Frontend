@@ -1,5 +1,9 @@
 <script>
- export default 
+  /** 
+   * Authors: Kent vejrup Madsen
+   */
+
+  export default 
   {
     name: 'FourthHeader',
     props: 

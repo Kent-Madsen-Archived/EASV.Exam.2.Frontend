@@ -1,4 +1,8 @@
 <script>
+  /** 
+   * Authors: Kent vejrup Madsen
+   */
+  
   import ConfigurationData 
     from '../assets/data/configuration.json';
 

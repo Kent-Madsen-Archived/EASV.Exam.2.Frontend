@@ -1,4 +1,7 @@
 <script>
+  /** 
+   * Authors: Kent vejrup Madsen
+   */
   import MenuAvailableButton 
     from "./mobile/buttons/MenuAvailableButton.vue";
 
