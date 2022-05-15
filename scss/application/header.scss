@@ -3,7 +3,7 @@ header
 
 }
 
-
+//
 header .public
 {
     display: flex;
@@ -68,7 +68,7 @@ header .public li a:active
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 

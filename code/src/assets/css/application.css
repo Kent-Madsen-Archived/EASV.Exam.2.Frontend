@@ -84,7 +84,7 @@ header .public li a:active {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 #mobile-button-area nav div {

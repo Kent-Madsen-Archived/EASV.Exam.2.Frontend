@@ -2,7 +2,6 @@
   /** 
    * Authors: Kent vejrup Madsen
    */
-
   import HeaderArea 
     from './components/areas/HeaderArea.vue';
 
