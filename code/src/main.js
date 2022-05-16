@@ -1,3 +1,6 @@
+/** 
+* Authors: Kent vejrup Madsen
+*/
 import { createApp } 
     from 'vue';
 

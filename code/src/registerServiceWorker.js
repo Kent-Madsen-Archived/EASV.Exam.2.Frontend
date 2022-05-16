@@ -1,4 +1,6 @@
-/* eslint-disable no-console */
+/** 
+* Authors: Kent vejrup Madsen
+*/
 import { register } 
   from 'register-service-worker'
 

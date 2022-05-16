@@ -1,5 +1,7 @@
 <script>
-<<<<<<< HEAD
+  /** 
+   * Authors: Kent vejrup Madsen
+   */
   import HeaderArea 
     from './components/areas/HeaderArea.vue';
 
@@ -8,7 +10,7 @@
 
   import Configuration
     from './components/Configuration.vue';
-    
+
 
   export default 
   {
@@ -21,7 +23,6 @@
       FooterArea,
       Configuration
     },
-  
     created() 
     {
 =======

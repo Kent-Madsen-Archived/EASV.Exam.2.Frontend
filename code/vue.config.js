@@ -1,7 +1,11 @@
-const { defineConfig } = require('@vue/cli-service')
+/**
+* Authors: Kent vejrup Madsen
+*/
+const { defineConfig } = require('@vue/cli-service');
+
 
 module.exports = defineConfig(
   {
     transpileDependencies: true
   }
-)
+);

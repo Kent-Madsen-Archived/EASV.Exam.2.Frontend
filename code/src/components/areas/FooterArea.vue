@@ -1,4 +1,8 @@
 <script>
+  /** 
+   * Authors: Kent vejrup Madsen
+   */
+  
   import FooterMobileArea 
     from './mobile/FooterMobileArea.vue';
 
