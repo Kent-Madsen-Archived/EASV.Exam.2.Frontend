@@ -1,5 +1,7 @@
 <script>
-<<<<<<< HEAD
+  /** 
+   * Authors: Kent vejrup Madsen
+   */
   import MainHeader 
     from '@/components/headers/MainHeader.vue';
 

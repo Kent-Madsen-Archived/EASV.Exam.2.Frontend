@@ -1,9 +1,16 @@
 <script>
+  /** 
+   * Authors: Kent vejrup Madsen
+   */
+  
   import HeaderMobileArea 
     from './mobile/HeaderMobileArea.vue';
 
   import HeaderDesktopArea 
     from './desktop/HeaderDesktopArea.vue';
+
+  import MobileMenu 
+    from './MobileMenu.vue';
   
 
   export default 
@@ -12,11 +19,13 @@
     components: 
     {
       HeaderDesktopArea,
-      HeaderMobileArea
+      HeaderMobileArea,
+      MobileMenu
     }
   }
 </script>
 <template>
   <HeaderDesktopArea />
   <HeaderMobileArea />
+  <MobileMenu />
 </template>

@@ -1,13 +1,15 @@
 {
-  "name": "frontend",
+  "name": "kanban frontend",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+  "scripts":
+  {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit"
   },
-  "dependencies": {
+  "dependencies":
+  {
     "@vue/cli": "^5.0.4",
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
@@ -16,7 +18,8 @@
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
   },
-  "devDependencies": {
+  "devDependencies":
+  {
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-pwa": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
@@ -26,7 +29,8 @@
     "@vue/test-utils": "^2.0.0-0",
     "chai": "^4.2.0"
   },
-  "browserslist": [
+  "browserslist":
+  [
     "> 1%",
     "last 2 versions",
     "not dead",
