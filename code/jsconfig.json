@@ -1,15 +1,21 @@
 {
-  "compilerOptions": {
+  "compilerOptions": 
+  {
     "target": "es5",
     "module": "esnext",
     "baseUrl": "./",
     "moduleResolution": "node",
-    "paths": {
-      "@/*": [
+    
+    "paths": 
+    {
+      "@/*": 
+      [
         "src/*"
       ]
     },
-    "lib": [
+
+    "lib": 
+    [
       "esnext",
       "dom",
       "dom.iterable",

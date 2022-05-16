@@ -1,2 +1,2 @@
 #!/bin/bash
-sass ./scss/application/style.scss ./code/src/assets/css/application.css
+sass ./scss/application/style.scss ./code/src/assets/css/application.css --no-source-map

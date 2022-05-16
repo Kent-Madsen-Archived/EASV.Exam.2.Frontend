@@ -1,4 +1,7 @@
 <script>
+  /** 
+   * Authors: Kent vejrup Madsen
+   */
   import ConfigurationData 
     from '../assets/data/configuration.json';
 
@@ -8,13 +11,38 @@
   import store 
     from '@/store';
 
+  import developmentConfiguration
+    from '@/assets/js/development_configuration';
+
+  import productionConfiguration
+    from '@/assets/js/production_configuration';
+
 
   export default 
   {
     name: 'Configuration',
+
+    data()
+    {
+      return {
+        shared: null
+      }
+    },
     
     components: 
     {
+    },
+
+    methods:
+    {
+      setToProduction: function ()
+      {
+        productionConfiguration.execute();
+      },
+      setToDevelopment: function ()
+      {
+        developmentConfiguration.execute();
+      }
     },
 
     created()
@@ -25,33 +53,23 @@
       if( dev.isDebugging ) 
       {
         store.dispatch( 'setConfigurationUrl', config[ 'development' ].configuration_url );
-        
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag()
-        { 
-            dataLayer.push( arguments ); 
-        }
-
-        gtag( 'js', new Date() );
-        gtag( 'config', 'G-2VM1ZPKDB1' );
+        this.setToDevelopment();
       }
       else 
       {
         store.dispatch( 'setConfigurationUrl', config[ 'production' ].configuration_url );
-
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag()
-        {
-            dataLayer.push( arguments );
-        }
-
-        gtag( 'js', new Date() );
-        gtag( 'config', 'G-WQNHF6ZWB6' );
+        this.setToProduction();
       }
     }
   }
 </script>
 <template>
+  <!-- Development -->
+  <div>
+
+  </div>
+  <!-- Production -->
+  <div>
+
+  </div>
 </template>
