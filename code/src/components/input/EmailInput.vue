@@ -4,11 +4,11 @@
    */
   export default 
   {
-    name: 'UsernameInput',
+    name: 'EmailInput',
     data()
     {
       return {
-        username_field: null
+        email_field: null
       }
     }
   }
@@ -16,8 +16,8 @@
 <template>
     <span>
         <label>
-          Username
+          Email
         </label>
-        <input type="text" v-model="username_field" />
+        <input type="text" v-model="email_field" />
     </span>
 </template>

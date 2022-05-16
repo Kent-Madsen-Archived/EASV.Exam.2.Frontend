@@ -5,13 +5,14 @@
   export default 
   {
     name: 'LogoComponent',
-    methods: {
+    methods:
+    {
         
     }
   }
 </script>
 <template>
     <div>
-      <img src="@/assets/images/logo.png" />
+      <img src="@/assets/images/logo.png" alt="website main logo" />
     </div>
 </template>

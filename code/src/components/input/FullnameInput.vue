@@ -4,11 +4,11 @@
    */
   export default 
   {
-    name: 'UsernameInput',
+    name: 'FullnameInput',
     data()
     {
       return {
-        username_field: null
+        fullname_field: null
       }
     }
   }
@@ -16,8 +16,8 @@
 <template>
     <span>
         <label>
-          Username
+          Full name
         </label>
-        <input type="text" v-model="username_field" />
+        <input type="text" v-model="fullname_field" />
     </span>
 </template>

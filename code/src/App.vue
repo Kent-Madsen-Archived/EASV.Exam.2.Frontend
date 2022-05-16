@@ -22,7 +22,6 @@
       FooterArea,
       Configuration
     },
-  
     created() 
     {
       

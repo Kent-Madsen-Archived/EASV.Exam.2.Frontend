@@ -12,7 +12,9 @@
   }
 </script>
 <template>
-  <button class="ui-button">
-    Register
-  </button>
+  <span>
+    <button class="ui-button">
+      Register
+    </button>
+  </span>
 </template>
