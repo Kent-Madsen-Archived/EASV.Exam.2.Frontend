@@ -19,7 +19,7 @@
   }
 </script>
 <template>
-    <span>
+    <span class="ui-registration-component">
       <div>
         <label>
           Password
