@@ -1,6 +1,83 @@
 @import 'header.scss';
 @import 'footer.scss';
 
+
+.ui-main-logo
+{
+  display: flex;
+  justify-content: center;
+}
+
+
+#ui-view-registration
+{
+  @extend %center-area-with-div;
+
+  display: flex;
+  flex-direction: column;
+  width: 20pc;
+}
+
+
+#ui-view-registration span
+{
+  @extend %input-space-exclude;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+#ui-view-registration span label
+{
+  font-weight: bold;
+  font-family: 'open sans';
+  text-align: center;
+}
+
+
+#ui-view-registration .ui-registration-component
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+#ui-view-registration .ui-registration-component div
+{
+  @extend %input-space-include;
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+#ui-view-login
+{
+  @extend %center-area-with-div;
+
+  display: flex;
+  flex-direction: column;
+  width: 20pc;
+}
+
+
+#ui-view-login span
+{
+  @extend %input-space-exclude;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#ui-view-login .ui-registration-component div
+{
+  display: flex;
+  flex-direction: column;
+}
+
+
 main 
 {
 

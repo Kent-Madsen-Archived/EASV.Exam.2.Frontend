@@ -33,7 +33,7 @@
     {
       signUp()
       {
-        console.log();
+
       }
     }
   }
@@ -41,13 +41,14 @@
 <template>
   <main>
     <div class="view-login">
-      <MainHeader TextArea="Login" />
-
       <LogoComponent />
 
-      <form @submit.prevent="signUp">
+      <MainHeader TextArea="Login" />
+
+      <form @submit.prevent="signUp"
+            id="ui-view-login">
         <UsernameInput />
-        <PasswordInput />
+        <PasswordInput confirm="false" />
 
         <LoginButton />
       </form>
