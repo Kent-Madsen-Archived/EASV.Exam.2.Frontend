@@ -19,6 +19,11 @@ module.exports =
         component: () => import( /* */ '../views/public/RegistrationView.vue' )
     },
     {
+        path: '/forgot_my_account',
+        name: 'Forgot Account',
+        component: () => import( /* */ '../views/public/ForgotView.vue' )
+    },
+    {
         path: '/prices',
         name: 'Prices',
         component: () => import( /* */ '../views/public/PricesView.vue' )
