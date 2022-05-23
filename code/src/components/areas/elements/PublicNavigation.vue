@@ -20,6 +20,5 @@
     <HeaderButton LinkTo="/prices" ButtonName="Prices"/>
 
     <HeaderButton LinkTo="/login" ButtonName="Login"/>
-    <HeaderButton LinkTo="/registration" ButtonName="Sign up"/>
   </ul>
 </template>

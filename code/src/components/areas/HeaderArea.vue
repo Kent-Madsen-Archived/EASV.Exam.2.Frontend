@@ -2,7 +2,6 @@
   /** 
    * Authors: Kent vejrup Madsen
    */
-  
   import HeaderMobileArea 
     from './mobile/HeaderMobileArea.vue';
 
