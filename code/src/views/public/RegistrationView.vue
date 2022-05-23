@@ -37,9 +37,9 @@
 <template>
   <main>
     <div class="view-registration">
-      <MainHeader TextArea="Registration" />
       <LogoComponent />
-      <form @submit.prevent="Register">
+      <MainHeader TextArea="Registration" />
+      <form @submit.prevent="Register" id="ui-view-registration">
         <username-input />
         <fullname-input />
         <email-input />

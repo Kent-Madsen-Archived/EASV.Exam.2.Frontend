@@ -1,4 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap");
+/**
+ */
+#ui-view-login, #ui-view-registration {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/**
+  Used at input areas to make a divide between items that are not related
+ */
+#ui-view-login span, #ui-view-registration span {
+  margin: 0;
+  margin-top: 1pc;
+  margin-bottom: 1pc;
+  padding-left: 1pc;
+  padding-right: 1pc;
+}
+
+/**
+  Used at input areas to make space between inputs that are related
+ */
+#ui-view-registration .ui-registration-component div {
+  margin: 0;
+  margin-top: 0.4pc;
+  margin-bottom: 0.4pc;
+  padding-right: 1pc;
+  padding-left: 1pc;
+}
+
 h1 {
   font-family: "open sans";
   text-align: center;
@@ -131,6 +160,55 @@ header .public li a:active {
     margin-bottom: 0.4pc;
   }
 }
+.ui-main-logo {
+  display: flex;
+  justify-content: center;
+}
+
+#ui-view-registration {
+  display: flex;
+  flex-direction: column;
+  width: 20pc;
+}
+
+#ui-view-registration span {
+  display: flex;
+  flex-direction: column;
+}
+
+#ui-view-registration span label {
+  font-weight: bold;
+  font-family: "open sans";
+  text-align: center;
+}
+
+#ui-view-registration .ui-registration-component {
+  margin: 0;
+  padding: 0;
+}
+
+#ui-view-registration .ui-registration-component div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#ui-view-login {
+  display: flex;
+  flex-direction: column;
+  width: 20pc;
+}
+
+#ui-view-login span {
+  display: flex;
+  flex-direction: column;
+}
+
+#ui-view-login .ui-registration-component div {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 769px) {
   .mobile {
     display: none;
@@ -145,3 +223,5 @@ header .public li a:active {
     display: none;
   }
 }
+
+/*# sourceMappingURL=application.css.map */
